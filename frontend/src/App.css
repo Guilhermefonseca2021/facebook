@@ -1,0 +1,74 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root .container .content {
+  max-width: 600px;
+}
+
+
+#root .container .content h1 {
+  font-size: 60px;
+  color: blue;
+}
+
+#root .container form {
+  width: 24rem;
+  height: 14rem;
+
+  display: flex;
+  padding: 1rem;
+  border: 1px solid gainsboro;
+  border-radius: 8px;
+  flex-direction: column;
+  gap: .5rem;
+  color: blue;
+
+  text-align: center;
+}
+
+#root .container form input {
+  padding: .5rem;
+  border-radius: 8px;
+  border: 1px solid grey;
+}
+
+
+#root .container form button[type="submit"] {
+  background-color: blue;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: .5rem;
+  color: whitesmoke;
+}
+
+#root .container form p {
+  border-bottom: 1px solid grey;
+}
+
+#root .container form button {
+  background-color: lawngreen;
+  margin-top: .2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: .5rem;
+  color: whitesmoke;
+} 
+
+@media screen and (max-width: 740px) {
+  #root .container .content {
+    display: none;
+  }
+}
